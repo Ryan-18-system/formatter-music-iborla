@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IbOrla Formatter</title>
+    <link rel="icon" type="image/x-icon" href="./asserts/channels4_profile.ico">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <textarea id="inputText" placeholder="Digite a letra da música aqui..."></textarea>
+        <div class="button-container">
+            <button onclick="formatLyrics()">Formatar Letra</button>
+            <button onclick="clearText()">Apagar</button>
+            <button onclick="copyResult()">Copiar Resultado</button>
+        </div>
+        <textarea id="outputText" placeholder="Resultado formatado" readonly></textarea>
+    </div>
+
+    <div id="alertModal" class="alert-modal">
+        <div class="alert-content">
+            <span class="close-btn" onclick="closeAlert()">&times;</span>
+            <p id="alertMessage">Alguma mensagem de alerta...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
