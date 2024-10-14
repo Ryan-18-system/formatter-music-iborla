@@ -46,6 +46,9 @@ function formatLyrics() {
 function showAlert(message) {
     document.getElementById('alertMessage').innerText = message;
     document.getElementById('alertModal').style.display = 'block';
+    setTimeout(()=>{
+        document.getElementById('alertModal').style.display = 'none';
+    },1000)
 }
 
 function closeAlert() {
